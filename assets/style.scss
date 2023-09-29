@@ -13,7 +13,6 @@
 /* BASE RULES */
 /**************/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
   font-size: 100%;
@@ -22,7 +21,7 @@ html {
 
 body {
   background: #fff;
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #404040;
   line-height: 1.7;
   font-weight: 400;
@@ -31,21 +30,18 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 0;
   padding: 0;
-  text-align: center;
 
   @include mobile {
     line-height: 1.4;
@@ -154,26 +150,6 @@ table tr td :last-child {
 .share-box {
   font-weight: bold;
   color: #222;
-}
-
-span[data-pullquote] {
-  display: block;
-
-  @include mobile {
-    display: none;
-  }
-}
-
-span[data-pullquote]:before {
-  content: attr(data-pullquote);
-  float: right;
-  width: 200px;
-  margin: 0 0 0.5em 30px;
-  padding: 0 -5% 0 0;
-  font-size: 1.3em;
-  font-style: italic;
-  color: green;
-  text-align: center;
 }
 
 a {
@@ -407,6 +383,8 @@ nav {
 .wrapper-container {
   min-height: 100%;
   position: relative;
+  margin-left: 10%;
+  max-width: 740px;
 }
 
 .wrapper-main {
@@ -418,7 +396,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
+  border-top: 1px solid $lightGray;
 }
 
 footer {
@@ -426,15 +404,6 @@ footer {
   text-align: center;
 }
 
-body:after {
-    background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-    width: 100%;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    left: 0;
-    content: '';
-}
 
 #bar {
     background: #000;
@@ -449,8 +418,7 @@ body:after {
 }
 
 .post h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -458,8 +426,7 @@ body:after {
 }
 
 .page h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -467,14 +434,14 @@ body:after {
 }
 
 .author_title{
-  text-align: center;
   color: #939aa1;
-  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
 }
 
 .post_date{
-  text-align: center;
   color: #939aa1;
+  margin-top: 0;
 }
 
 .cd-container a {
@@ -630,7 +597,7 @@ Modules - reusable parts of our design
 }
 
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   overflow: hidden;
   max-width: 270px;
@@ -1142,6 +1109,6 @@ Modules - reusable parts of our design
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-@import "darcula";
+// @import "highlights";
+@import "monokai";
 @import "svg-icons";
