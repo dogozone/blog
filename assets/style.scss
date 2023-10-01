@@ -59,17 +59,6 @@ h2 {
   font-size: 24px;
 }
 
-@media (min-width: 769px){
-	.post h2::before, .post h2::after {
-	    content: "";
-	    display: inline-block;
-	    vertical-align: middle;
-	    width: 46px;
-	    height: 1px;
-	    background: rgb(192, 211, 218);
-	    margin: 0px 30px;
-	}
-}
 
 h3 {
   font-size: 20px;
@@ -408,13 +397,29 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
   
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
   .attribution {
     display: block;
     font-size: 10px;
+  }
+
+  .wrapper-social-icons a {
+    margin: 0 25px;
+
+    @include tablet {
+      margin: 0 5px;
+    }
   }
 }
 
