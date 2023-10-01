@@ -1,6 +1,6 @@
 name: Hey,
 
-author: Darius Pirvulescu
+author: Darius
 
 # Short bio or description (displayed in the header)
 description: Darius here
@@ -9,6 +9,7 @@ description: Darius here
 footer-links:
   email: organicdarius@gmail.com
   github: dariuspirvulescu
+  linkedin: darius-pirvulescu
 
 # Your website URL
 # Used for Sitemap.xml and your RSS feed
