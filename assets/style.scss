@@ -250,6 +250,7 @@ p > img {
 
   @include tablet {
     text-align: left;
+    margin-top: 10px;
 
     padding: 20px 0;
     border-bottom: 1px solid $lightGray;
@@ -259,8 +260,8 @@ p > img {
 .site-avatar {
   float: none;
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
 
   @include tablet {
@@ -269,9 +270,9 @@ p > img {
   }
 
   img {
-    border-radius: 5px;
-    width: 70px;
-    height: 70px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
   }
 }
@@ -413,15 +414,15 @@ footer {
 
 
 #bar {
-    background: #000;
-    height: 7px;
-    background-size: cover;
-    background-position: left 60%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1000;
+  background: #000;
+  height: 7px;
+  background-size: cover;
+  background-position: left 60%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
 }
 
 .post h1{
