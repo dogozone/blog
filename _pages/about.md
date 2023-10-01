@@ -6,6 +6,5 @@ permalink: /about/
 
 This is my blog.
 
+[more description to come]
 ![image]({{ site.baseurl }}/assets/images/fly-dog.jpg)
-
-Theme inspired by [Reverie](https://github.com/amitmerchant1990/reverie)
