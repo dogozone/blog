@@ -409,7 +409,13 @@ nav {
 
 footer {
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  
+  .attribution {
+    display: block;
+    font-size: 10px;
+  }
 }
 
 
