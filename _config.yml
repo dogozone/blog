@@ -8,13 +8,13 @@ description: Darius here
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: organicdarius@gmail.com
-  github: dariuspirvulescu
+  github: panacotar
   linkedin: darius-pirvulescu
 
 # Your website URL
 # Used for Sitemap.xml and your RSS feed
-url: http://dariuspirvulescu.github.io/blog
-enforce_ssl: http://dariuspirvulescu.github.io/blog
+url: http://panacotar.github.io/blog
+enforce_ssl: http://panacotar.github.io/blog
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
